@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>A Basic HTML5 Template</title>
+    <meta name="description" content="A simple HTML5 Template for new projects.">
+    <meta name="author" content="SitePoint">
+
+    <meta property="og:title" content="A Basic HTML5 Template">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+    <meta property="og:description" content="A simple HTML5 Template for new projects.">
+    <meta property="og:image" content="image.png">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
+
+    <link rel="stylesheet" href="./styles/style.css?v=1.0">
+
+</head>
+
+<body>
+    <header>
+        <h1>mussio</h1>
+    </header>
+    <section class="greet">
+        <label id="lblGreeting"></label>
+    </section>
+    <section class="main">
+        <div class="radioGrid-container">
+        
+         
+        </div></section>
+    
+    <!-- your content here... -->
+    <sectoion class="radioPlayer">
+
+        <div class="playerContainer">
+            <div class="imagediv">
+                <div class="containerImg"><img src="#" alt=""></div>
+            </div>
+
+        <audio id="my-audio" controls autoplay >
+        
+        </audio>
+        <div class="nowPlaying">
+            <div class="titleTrack">
+                
+            </div>
+        </div>
+        </div>
+    </sectoion>
+    <section class="bottomNav">
+
+    </section>
+    
+    
+    
+    <script src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
+    <script>
+        const player = new Plyr('#my-audio', {
+            controls: ['play', 'play-large'],
+        
+        });
+      </script>
+    <script src="script.js"></script>
+    <script src="./js/greeting.js"></script>
+</body>
+
+</html>

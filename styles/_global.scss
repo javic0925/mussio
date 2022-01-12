@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Vision";
+  src: url(../fonts/vision-webfont.woff) format("woff2");
+}
+
+html {
+  size: 62.5%;
+  background-color: hsl(221, 11%, 11%);
+  color: hsl(214, 16%, 64%);
+  font-family: "Vision";
+}

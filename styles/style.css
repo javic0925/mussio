@@ -136,14 +136,13 @@ header h1 {
 }
 
 .radioGrid-container {
-  background-color: #f9564f;
   width: 95%;
   height: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (6rem)[auto-fill];
       grid-template-columns: repeat(auto-fill, 6rem);
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
   grid-row-end: auto;
   overflow: hidden;
   -webkit-box-pack: center;

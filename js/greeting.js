@@ -4,11 +4,11 @@ var myDate = new Date();
     var greet;
 
     if (hrs < 12)
-        greet = ' Good Morning, ';
+        greet = ' Good Morning ';
     else if (hrs >= 12 && hrs <= 17)
-        greet = ' Good Afternoon, ';
+        greet = ' Good Afternoon ';
     else if (hrs >= 17 && hrs <= 24)
-        greet = ' Good Evening, ';
+        greet = ' Good Evening ';
 
     document.getElementById('lblGreeting').innerHTML =
-        greet + " Javier";
+    "Hello, " + greet ;

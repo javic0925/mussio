@@ -34,12 +34,11 @@ header {
 }
 
 .radioGrid-container {
-  background-color: #f9564f;
   width: 95%;
   height: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, 6rem);
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
   grid-row-end: auto;
   overflow: hidden;
   justify-content: center;

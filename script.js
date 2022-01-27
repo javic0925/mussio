@@ -38,38 +38,38 @@ const streaming = async () => {
 };
 
 
-// $(function togglePlay (music) {
-//   var song = document.getElementsByTagName('audio')[0],
-//       sourceMp3 = document.getElementsByTagName('audio')[0];
+$(function togglePlay (music) {
+  var song = document.getElementsByTagName('audio')[0],
+      sourceMp3 = document.getElementsByTagName('audio')[0];
       
 
-//       sourceMp3.src = music;
+      sourceMp3.src = music;
 
 
-//   $('#player').click(function (e) {
+  $('#player').click(function (e) {
      
-//       if (song.paused) song.play();
-//       else 
-//       song.setAttribute('src' , music); 
+      if (song.paused) song.play();
+      else 
+      song.setAttribute('src' , music); 
   
-//   });
-//   $('#player').bind('click', function() {
-//       if ($('#playback').attr('class') == 'fa fa-stop fa-lg beat')
-//           $('#playback').attr('class', 'fa fa-play fa-lg');
-//       else
-//           $('#playback').attr('class', 'fa fa-stop fa-lg beat');
-//   });
+  });
+  $('#player').bind('click', function() {
+      if ($('#playback').attr('class') == 'fa fa-stop fa-lg beat')
+          $('#playback').attr('class', 'fa fa-play fa-lg');
+      else
+          $('#playback').attr('class', 'fa fa-stop fa-lg beat');
+  });
 
-//   song.addEventListener('pause', function () {
-//       song.setAttribute('src' , music);
-//       song.currentTime = 0;
-//       $('#playback').attr('class', 'fa fa-play fa-lg');
-//   });
+  song.addEventListener('pause', function () {
+      song.setAttribute('src' , music);
+      song.currentTime = 0;
+      $('#playback').attr('class', 'fa fa-play fa-lg');
+  });
 
 
 
   
-// });
+});
 var interval = 400;
 var timer = window.setInterval(function() {
   
@@ -85,6 +85,8 @@ var timer = window.setInterval(function() {
       if (yourCodeHasBeenExecuted === true) {
         window.clearInterval(timer);
      }
+
+     
       },interval);
 
 

@@ -1,0 +1,61 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css);
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#playback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(214, 16%, 64%);
+  pointer-events: initial;
+  height: 100%;
+  width: 100%;
+  text-shadow: 0 0 3rem rgba(0, 0, 0, 0.3);
+}
+
+.fa-lg {
+  font-size: 2rem;
+}
+
+/*
+
+@-webkit-keyframes beat {
+  0% {
+    -webkit-transform: scale(1);
+    text-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    text-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+  }
+}
+@keyframes beat {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    transform: scale(1.1);
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+  }
+}
+.beat {
+  -webkit-animation: beat 0.8s ease 0s infinite normal;
+  animation: beat 0.8s ease 0s infinite normal;
+}
+
+*/

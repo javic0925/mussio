@@ -1,8 +1,10 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css);
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow: hidden;
 }
 
 @font-face {
@@ -17,6 +19,72 @@ html {
   font-family: "Vision";
 }
 
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#playback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #95a1b2;
+  pointer-events: initial;
+  height: 100%;
+  width: 100%;
+  text-shadow: 0 0 3rem rgba(0, 0, 0, 0.3);
+}
+
+.fa-lg {
+  font-size: 2rem;
+}
+
+/*
+
+@-webkit-keyframes beat {
+  0% {
+    -webkit-transform: scale(1);
+    text-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    text-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+  }
+}
+@keyframes beat {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    transform: scale(1.1);
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+  }
+}
+.beat {
+  -webkit-animation: beat 0.8s ease 0s infinite normal;
+  animation: beat 0.8s ease 0s infinite normal;
+}
+
+*/
 header {
   width: 100vw;
   height: 8vh;
@@ -44,7 +112,6 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
 }
 
 #lblGreeting {
@@ -58,32 +125,34 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .radioGrid-container {
+  background-color: #f9564f;
   width: 95%;
-  height: 100%;
+  height: auto;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (6rem)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 6rem);
+  grid-gap: 0.5rem;
   grid-row-end: auto;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
   overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .radioGrid-container > div {
-  height: 7rem;
+  height: 6rem;
   background-color: #95a1b2;
   text-align: center;
   font-size: 30px;
@@ -119,8 +188,8 @@ header h1 {
 }
 
 .playerContainer {
-  width: 85%;
-  height: 35%;
+  width: 25rem;
+  height: 4.5rem;
   border-radius: 10rem;
   background-color: #131313;
   display: -webkit-box;
@@ -133,6 +202,11 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#player {
+  width: 10%;
+  height: 100%;
 }
 
 .imagediv {
@@ -175,7 +249,7 @@ header h1 {
 }
 
 .nowPlaying {
-  width: 80%;
+  width: 70%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

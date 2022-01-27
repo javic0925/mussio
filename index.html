@@ -20,8 +20,8 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
-
     <link rel="stylesheet" href="./styles/style.css?v=1.0">
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
 
 </head>
 
@@ -34,9 +34,9 @@
     </section>
     <section class="main">
         <div class="radioGrid-container">
-        
          
-        </div></section>
+        </div>
+    </section>
     
     <!-- your content here... -->
     <sectoion class="radioPlayer">
@@ -45,10 +45,11 @@
             <div class="imagediv">
                 <div class="containerImg"><img src="#" alt=""></div>
             </div>
-
-        <audio id="my-audio" preload="none" autoplay >
+        <div id="player">
+            <span id="playback" class="fa fa-play fa-lg"></span>
+        </div>
         
-        </audio>
+        
         <div class="nowPlaying">
             <div class="titleTrack">
                 
@@ -57,18 +58,14 @@
         </div>
     </sectoion>
     <section class="bottomNav">
-
+        <audio autoplay preload="none" >
+            <source id="sourceOgg" type="audio/ogg" />
+            <source id="sourceMp3" type="audio/mpeg" />
+        </audio>
     </section>
+
     
     
-    
-    <script src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
-    <script>
-        const player = new Plyr('#my-audio', {
-            controls: ['play', 'play-large'],
-        
-        });
-      </script>
     <script src="script.js"></script>
     <script src="./js/greeting.js"></script>
 </body>

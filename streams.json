@@ -1,8 +1,14 @@
   {
     "Streams":[
     
-    {"name":"Impac Records", "album":"Radio", "url":"https:\/\/c7.radioboss.fm:18128\/stream", "artwork":"https:\/\/c7.radioboss.fm\/w\/artwork\/128.png?1642008759842"}
+    {"name":"Impac Records Radio", "album":"Radio", "url":"https:\/\/c7.radioboss.fm:18128\/stream", "artwork":"https:\/\/radio.impacrecords.com\/icons\/sidenav\/ISOTIPO%20IMPAC%20RECORDS%201.png"}
 
     ,{"name":"La Mega 97.9", "album":"Radio", "url":"https:\/\/prod-34-145-27-33.wostreaming.net\/sbsystems-wskqfmaac-imc1?session-id=c976cab588fb1c830f289edcfe3425eb", "artwork":"https:\/\/audio.lamusica.com\/artworks\/5e948c4782812cf282342485.svg"}
+
+    ,{"name":"XtremeVibes Radio", "album":"Radio", "url":"https:\/\/c17.radioboss.fm:8162\/stream", "artwork":"https:\/\/www.xtremevibes.com\/images\/logo3.png"}
+
+    ,{"name":"FM Azul Radio", "album":"Radio", "url":"https:\/\/c15.radioboss.fm\/stream\/449", "artwork":"https:\/\/cbox.im\/i\/X0EVs.jpg"}
+
+    
     ]
   }

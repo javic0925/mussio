@@ -52,6 +52,7 @@ header {
   border-radius: 0.3rem;
   overflow: hidden;
   img {
+    padding: 0.5rem;
     height: 100%;
     width: 100%;
     object-fit: contain;
@@ -93,21 +94,23 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0.5rem;
 }
 
 .containerImg {
-  width: 80%;
-  height: 80%;
-  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   background-color: hsl(214, 16%, 64%);
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   img {
-    height: 60%;
-    width: auto;
-    object-fit: cover;
+    padding: 0.5rem;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
 }
 
@@ -127,6 +130,12 @@ header {
   width: 100%;
   height: 100%;
   color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  p {
+    font: 400;
+  }
 }
 
 .title {

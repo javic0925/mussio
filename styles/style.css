@@ -160,6 +160,7 @@ header h1 {
 }
 
 .radioGrid-container > div img {
+  padding: 0.5rem;
   height: 100%;
   width: 100%;
   -o-object-fit: contain;
@@ -221,12 +222,13 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0.5rem;
 }
 
 .containerImg {
-  width: 80%;
-  height: 80%;
-  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   background-color: #95a1b2;
   overflow: hidden;
   display: -webkit-box;
@@ -241,10 +243,11 @@ header h1 {
 }
 
 .containerImg img {
-  height: 60%;
-  width: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .nowPlaying {
@@ -273,6 +276,19 @@ header h1 {
   width: 100%;
   height: 100%;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titleTrack p {
+  font: 400;
 }
 
 .title {

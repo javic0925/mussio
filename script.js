@@ -14,8 +14,7 @@ const streaming = async () => {
       cont.appendChild(container);
       
       container.innerHTML = 
-      `<img src="${items.artwork}" alt="" onclick="togglePlay('${items.url}');" onclick="toggleTitle();">
-      <p id="metaData">${items.name}</p>`;
+      `<img src="${items.artwork}" alt="" onclick="togglePlay('${items.url}' , '${items.artwork}' , '${items.name}');">`;
 
       
 
@@ -32,10 +31,26 @@ const streaming = async () => {
   
   var song = document.getElementsByTagName('audio')[0],
   sourceMp3 = document.getElementsByTagName('audio')[0];
+  
+  var pic = document.getElementsByTagName('img')[0],
+    picsrc = document.getElementsByTagName('img')[0];
+    console.log(pic);
 
-  function togglePlay(music){
+  var titleTrack = document.getElementsByTagName('p')[0],
+      titleText = document.getElementsByTagName('p')[0];
+      console.log(titleTrack);
+
+
+  function togglePlay(music , art , title){
   song.setAttribute('src' , music)
+  pic.setAttribute('src', art)
+  titleTrack.innerText = title
+
 };
+
+
+
+
 
 
 $(function togglePlay (music) {
